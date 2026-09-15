@@ -1,0 +1,39 @@
+.searchbox {
+  width: min(100%, 31rem);
+  padding: clamp(1rem, 4vw, 1.75rem);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.searchbox h4 {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-size: clamp(1rem, 3vw, 1.15rem);
+}
+
+.searchbox form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.city-field {
+  width: 100%;
+}
+
+.search-button {
+  min-height: 2.9rem;
+}
+
+@media (max-width: 420px) {
+  .searchbox {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.weatherapp {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh !important;
+  padding: clamp(1.25rem, 4vw, 3rem) 1rem;
+  gap: clamp(0.9rem, 2vw, 1.5rem);
+  overflow: hidden;
+  text-align: center;
+}
+
+.weatherapp::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background: linear-gradient(135deg, rgba(9, 18, 43, 0.62), rgba(27, 75, 99, 0.38));
+}
+
+.weatherapp__title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 7vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.35);
+}
